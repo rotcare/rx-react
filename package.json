@@ -1,0 +1,14 @@
+{
+    "name": "@stableinf/rx-react",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stableinf/rx-react.git"
+    },
+    "dependencies": {
+        "react": "^17.0.1"
+    },
+    "peerDependencies": {
+        "@stableinf/rx-core": "*"
+    }
+}
