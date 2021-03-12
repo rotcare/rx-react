@@ -1,5 +1,5 @@
-import { useLog } from '@stableinf/io';
-import { Future, reactive, Widget, WidgetClass, WidgetSpi } from '@stableinf/rx-core';
+import { useLog } from '@rotcare/io';
+import { Future, reactive, Widget, WidgetClass, WidgetSpi } from '@rotcare/rx-core';
 import * as React from 'react';
 import { currentSpan, runInSpan } from './tracing';
 

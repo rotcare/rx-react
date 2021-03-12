@@ -1,4 +1,4 @@
-import { Span } from "@stableinf/io";
+import { Span } from "@rotcare/io";
 import * as tracing from 'scheduler/tracing';
 
 export function runInSpan<T>(op: Span, action: () => T): T {

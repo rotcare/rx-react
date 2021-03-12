@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { IoConf, newTrace } from '@stableinf/io';
-import { UiScene, WidgetClass } from '@stableinf/rx-core';
+import { IoConf, newTrace } from '@rotcare/io';
+import { UiScene, WidgetClass } from '@rotcare/rx-core';
 import { runInSpan } from './tracing';
 import { Suspense } from 'react';
 import { renderWidget } from './renderWidget';
