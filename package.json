@@ -5,8 +5,15 @@
         "type": "git",
         "url": "https://github.com/rotcare/rx-react.git"
     },
+    "main": "src/index.ts",
     "dependencies": {
-        "react": "^17.0.1"
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
+        "@types/scheduler": "^0.16.1"
     },
     "peerDependencies": {
         "@rotcare/rx-core": "*"
