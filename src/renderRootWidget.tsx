@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { IoConf, newTrace } from '@rotcare/io';
+import { IoConf, newTrace, reportEvent } from '@rotcare/io';
 import { UiScene, WidgetClass } from '@rotcare/rx-core';
 import { runInSpan } from './tracing';
 import { Suspense } from 'react';
@@ -13,7 +13,7 @@ export function renderRootWidget(
     UiScene.ioConf = ioConf;
     const elem = document.getElementById('RootWidget');
     if (!elem) {
-        console.error('missing element #RootWidget');
+        reportEvent('missing element #RootWidget', {});
         return;
     }
     const operation = newTrace(`initial render ${window.location.href}`);
