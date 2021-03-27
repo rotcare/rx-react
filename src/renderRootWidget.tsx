@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { IoConf, newTrace, reportEvent } from '@rotcare/io';
+import { SceneConf, newTrace, reportEvent } from '@rotcare/io';
 import { UiScene, WidgetClass } from '@rotcare/rx-core';
 import { runInSpan } from './tracing';
 import { Suspense } from 'react';
@@ -8,9 +8,9 @@ import { renderWidget } from './renderWidget';
 
 export function renderRootWidget(
     widgetClass: WidgetClass,
-    ioConf: IoConf,
+    conf: Partial<SceneConf>,
 ) {
-    UiScene.ioConf = ioConf;
+    UiScene.conf = conf;
     const elem = document.getElementById('RootWidget');
     if (!elem) {
         reportEvent('missing element #RootWidget', {});
